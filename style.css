@@ -21,6 +21,7 @@ body {
   padding: 15px;
   border-radius: 5px;
   box-shadow: 0 5px black;
+  max-width:250px;
 }
 
 .ecran {
@@ -34,6 +35,7 @@ body {
   align-items: flex-end;
   padding: 5px;
   font-size: 25px;
+  overflow: hidden;
 }
 
 .touches {
