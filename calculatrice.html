@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice</title>
+    <link rel="icon" href="calc.png">
+    <link rel="stylesheet" href="calculatrice.css">
+</head>
+<body>
+
+    <div id="resultat"></div>
+
+    <div class="calculator">
+      <input type="text" id="result" readonly />
+      <input type="text" id="input" readonly />
+
+      <input type="button" value="(" onclick="calculator.ajouter('(')" />
+      <input type="button" value=")" onclick="calculator.ajouter(')')" />
+      <input type="button" value="C" class="clear" onclick="calculator.effacer()" />
+      <input type="button" value="/" class="operator" onclick="calculator.ajouter('/')" />
+
+      <input type="button" value="7" onclick="calculator.ajouter('7')" />
+      <input type="button" value="8" onclick="calculator.ajouter('8')" />
+      <input type="button" value="9" onclick="calculator.ajouter('9')" />
+      <input type="button" value="*" class="operator" onclick="calculator.ajouter('*')" />
+
+      <input type="button" value="4" onclick="calculator.ajouter('4')" />
+      <input type="button" value="5" onclick="calculator.ajouter('5')" />
+      <input type="button" value="6" onclick="calculator.ajouter('6')" />
+      <input type="button" value="-" class="operator" onclick="calculator.ajouter('-')" />
+
+      <input type="button" value="1" onclick="calculator.ajouter('1')" />
+      <input type="button" value="2" onclick="calculator.ajouter('2')" />
+      <input type="button"value="3" onclick="calculator.ajouter('3')" />
+      <input type="button" value="+" class="operator" onclick="calculator.ajouter('+')" />
+
+      <input type="button" value="0" onclick="calculator.ajouter('0')" />
+      <input type="button" value="." onclick="calculator.ajouter('.')" />
+      <input type="button" value="=" class="operator" onclick="calculator.calc()" />
+      <input type="button" value="&larr;" class="undo" onclick="calculator.retour()" />
+      
+
+    </div>
+    <script src="calculatrice.js"></script>
+</body>
+</html>
